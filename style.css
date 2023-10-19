@@ -117,7 +117,7 @@ padding: 10px 10px 0 10px;
 }
 
 .about{
-  width: 210px;
+  min-width: 210px;
   height: fit-content;
 }
 .modal-dialog {
