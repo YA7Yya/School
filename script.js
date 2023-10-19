@@ -12,6 +12,20 @@ login.addEventListener("click",() =>{
     'error'
   )
 })
+let contactButton = document.querySelector(".contactButton")
+function contactFocus(){
+  let input = document.querySelector(".contactFocus")
+  setTimeout(() => {
+    input.focus()
+  }, 500);
+}
+contactButton.addEventListener("click",() =>{
+  Swal.fire(
+    'Read Below !',
+    'You Can Make Login Form By Yours Because I Have Not Learnt PHP ( This Message For System Management )',
+    'error'
+  )
+})
 
 
   // Run on page load

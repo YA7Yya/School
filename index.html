@@ -9,7 +9,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.32/sweetalert2.min.js" integrity="sha512-3PL7jW3xI1EjF2Hfqwv5u6nKG/BnUbWytnJDhsY/q5CbIB5XzoHNhJvgmFeVD7xgC9DbKDm+gPP9uDAAfLAZUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css" />
+    <noscript><link rel="stylesheet" href="noscript.css" /></noscript>
 </head>
+
 
 <body>
 <header>
@@ -27,9 +30,15 @@
           <li class="nav-item">
             <a class="nav-link active " aria-current="page" href="#" >Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+          <li class="nav-item" onclick="contactFocus()"> 
+            <a  onclick="contactFocus()" class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contact" data-bs-whatever="@mdo">Contact Us</a>
           </li>
+            
+
+
+
+
+
           <li class="nav-item">
             <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#location" data-bs-whatever="@mdo">Location</a>
           </li>
@@ -118,6 +127,7 @@
 <div class="" style=" background-color: #0081C9; width: 99%; margin: 8px; border-radius: 8px; height: 158px;">
 <h2 dir="rtl" style="color: #FFD700; padding: 7px;">نحن .......</h2>
 </div> -->
+
 <!-- <div class="row" id="s">
   <div class="col-md-5">
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -156,7 +166,140 @@
     
   </div>
 </div> -->
+
   
+
+
+
+
+
+
+<div class="modal fade" id="contact" tabindex="-1" aria-labelledby="contactLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="contactLabel">Contact Us</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Your Name:</label>
+            <input type="text" class="form-control contactFocus" autofocus id="recipient-name" >
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Your Email:</label>
+          <input type="email" class="form-control ">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Your Message:</label>
+          <input type="text" class="form-control ">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary ">Send Us A Message</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+  <footer class="wrapper style1 align-center">
+
+      <div class="footerContainer ">
+        <div class="location">
+          <h4>Location : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+        <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d426.86323093287626!2d30.1264944!3d31.1401294!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5df3b01515d65%3A0xe21a243c8751ada2!2sSchool%20of%20the%20Future%20for%20Boys!5e0!3m2!1sen!2seg!4v1697570295899!5m2!1sen!2seg"  width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        </div>
+        <div class="aboutus ">
+      <center><h4  >About Us:</h4></center>
+<center><div class="about">
+  مدرسة المستقبل هي مدرسة خاصة فهي لديها الادارة والمعلمين الاكفأ بالمنطقة حيث تم اختيار هؤلاء المعلمون بعناية حتى يسير النظام التعليمي بشكل صحيح وانها تعتمد على نظام العقاب والثواب وليس العنف.
+
+  
+
+<a href="#story"  data-bs-toggle="modal" data-bs-target="#story">انقر هنا لقراءة للمزيد من المعلومات</a>
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#story">
+  انقر هنا لقراءة المزيد من المعلومات
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="story" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="storyLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="storyLabel">Part Of Our Story</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<p >
+  جريدة الأهرام  أحدي أهم وأكبر الصحف الرسمية والناطقة بأسم الدولة تتحدث عن إنجازات مدارس 30 يونيو
+  ضاعفت وزارة التربية والتعليم، من النجاحات التي تحققت في مدارس 30 يونيو، التي كانت مملوكة لجماعة الإخوان الإرهابية، بعد أن وصلت معدلات الإقبال على المدارس خلال العام الدراسي الحالي، لمستويات قياسية، رغم مزاعم الجماعة الإرهابية بأنها تشهد حالة من تراجع التقديم لتلك المدارس.
+  وأصبحت مدارس 30 يونيو، تتربع على صدارة المدارس الخاصة والدولية التي يتم اختيارها من أولياء الأمور، لأسباب كثيرة ترتبط بضبط إيقاع المصروفات الدراسية، والتحكم في زيادتها بميزان حساس، وفقا لقواعد إدارية وقرارات وزارية صارمة، لا يمكن الاستهانة بها، أو تجاوزها من أي مدير مدرسة.
+  السبب الآخر في زيادة الإقبال على المدارس، أن وزارة التربية والتعليم صارت تتشدد في انتقاء أفضل العناصر والكوادر، سواء على مستوى مديري ووكلاء المدارس والمراحل التعليمية، أو حتى على مستوى المعلمين والإداريين، وتطبيق مبدأ الثواب والعقاب، ومشاركة أولياء الأمور في كل كبيرة وصغيرة تحدث.
+  وبالتناقض مع ما تسوق له الجماعة الإرهابية، وعناصرها. رصدت "بوابة الأهرام"، زيادة في معدلات الإقبال على مدارس 30 يونيو بما يفوق قدرتها الاستيعابية بنحو ضعفين، وأكثر، وهناك مدارس رفضت قبول مئات الطلاب لأنها استكفت بالعدد المتاح، دون تلاعب في الكثافة.
+  ولم تستغل مدارس 30 يونيو، تبعيتها أو إدارتها من جانب وزارة التربية والتعليم، لمضاعفة الكثافة الطلابية أو زيادة المصروفات بما يفوق قدرات الأهالي، تحت مسمى أن هذه المدارس لن تجد رقابة أو يُحاسبها أحد. لكن مجموعة 30 يونيو، التي تدير تلك المدارس لديها جهاز رقابي صارم، ماليا وإداريا، يختص بمتابعة المدارس بشكل يومي، ورصد أية خروقات أو تجاوزات مع محاسبة المسئولين عنها بشكل فوري، وتنحيتهم عن مناصبهم، ولو كانوا مدراء مدارس.
+  واطلعت "بوابة الأهرام"، عن قُرب، على حجم الانضباط الذي تسير عليه مدارس 30 يونيو، ماليا وإداريا وتربويا، بل إن هناك إدارات معنية بالتواصل مع أولياء الأمور، لسماع وجهات نظر في مستوى الإدارة والانضباط ومدى حصولهم على حقوق أبنائهم كاملة، أم أن هناك أي تقصير، فضلا عن مراقبة النواحي المالية بشكل صارم، عبر جهاز مختص بهذا الملف، من خلال نخبة منتقاة من الخبراء الماليين والمحاسبين، على أن يكون كل شيء مثبت بوثائق رسمية تمنع أي تلاعب قد يحدث.
+  ويحظى المسئولون عن إدارة ملف 30 يونيو، بدعم غير محدود، ودون سقف، من الدكتور رضا حجازي وزير التربية والتعليم، الذي أكد أن مدارس 30 يونيو تحظى باهتمام بالغ منه شخصيا، مؤكدا ثقته الكاملة في المجموعة التي تدير هذه المدارس، ومكتبها الفني، ورجالها المسئولين عن النواحي المالية والإدارية، لذلك لا يدخر جهدا في سبيل تقديم كافة أشكال الدعم للمنظومة التعليمية بمدارس 30 يونيو، سعيا لتطويرها بجميع عناصرها، وتعزيز جودة خدماتها، والارتقاء بمستوى الخبرات التربوية والتعليمية بها.
+  وأشار حجازي إلي أن الوزارة تسعى بكافة جهودها لدعم وتطوير مدارس ٣٠ يونيو، لتظل برونقها وتحافظ على نجاحها، في رسالة مباشرة وصارمة وعلانية تدحض ادعاءات الأصوات التي تثير شائعات لأهداف شخصية، وتوحي بأن مدارس 30 يونيو غارقة في المشكلات والشكاوى، لكن وزير التربية والتعليم، وهو الذي يتلقى تقاريرا دورية عن أوضاع هذه المدارس، دحض شائعات الجماعة الإهاربية، والأصوات التي تسعى لتحقيق مصالح شخصية على حساب استقرار مدارس 30 يونيو.
+  وكان حجازي، مسئولا عن مدارس 30 يونيو، ضمن مهام كثيرة أوكلت إليه قبل أن يصل لمنصبه الحالي كوزير للتربية والتعليم، ونجح في المهمة بامتياز، أي أنه يدرك تماما مدى احتياج هذه المدارس لكفاءات وخبرات وشخصيات أمينة، لكنه أبقى على كل المسئولين عن مجموعة 30 يونيو منذ توليه المنصب، وهو ما يعني ثقته في العناصر الموجودة بالمجموعة، وأنهم نجحوا في المهمة بكفاءة، وما يثار عكس ذلك، يستهدف التخديم بشكل غير مباشر على مصالح تيارات وشخصيات بعينها.
+  ومنذ سنوات، أنهت وزارة التربية والتعليم، زمن الفوضى الذي خلفه الإخوان في مدارس 30 يونيو، حيث عملت المجموعة التي تدير هذه المدارس على تطهيرها من الفوضى والفساد والمحسوبيات، لجعل الطالب هو الحلقة الأهم، فلم تهتم بهيمنة لغة البيزنس، بل إثبات أن الحكومة جادة في الحفاظ على هذه الكيانات التعليمية، وعدم توظيفها إلا في النواحي التربوية.
+  كان المسار الأول، أن يتم إقصاء كل عناصر الفساد المالي والإداري. وقد حدث، ثم تطهيرها من المتشددين، وقد حدث أيضا، وجاء المسار الثاني بانتقاء عناصر على درجة عالية من الكفاءة والمهنية والولاء للدولة، محل الذين تمت إقالتهم من مناصبهم.
+  وعملت الوزارة خلال الفترة الأخيرة في صمت، لأجل أن تجعل مدارس 30 يونيو، أكثر عالمية، فخصصت ملايين الجنيهات لتطويرها وتحديثها، وترميمها ومدها بأحدث الوسائل التعليمية، وجعلها منافسة لأي مدرسة أخرى، سواء كانت خاصة أو دولية، ما جعلها تحظى باعتراف من كبرى جهات الاعتماد الدولية، وهو ما لم تحققه غالبية المدارس الخاصة الأخرى.
+  وابتكرت مجموعة مدارس 30 يونيو، مسارا تعليميا استثنائيا، يعتمد على شقين، الأول الحضور في المدارس، والثاني عبر التعلم الإلكتروني، وشهدت لأول مرة في أيّ مدرسة مصرية، تسجيل محاضرات المعلمين في المدارس وإعادة بثها مرة أخرى للطلاب. تجنبا لأن يكون هناك أي طالب لم يستوعب الدرس، أو تغيب عن المدرسة لأي سبب، وفوق كل ذلك، يكون هناك تقييم دوري للطلاب وهم في منازلهم.
+  وأتاحت مجموعة "30 يونيو" عبر سيستم إلكتروني محترف، أن يتواصل معها أيّ معلم أو طالب أو ولي أمر، للشكوى أو إبداء الرأي، أو الإبلاغ عن مشكلة، وهذا يحدث لأول مرة، بأن تكون كل المدارس متصلة بالوزارة عبر تقنية رقمية، وكأنها "كتاب مفتوح"، دون وسيط أو محسوبيات، وأصبح بإمكان ولي الأمر، عبر هذا السيستم، أن يتابع ابنه طوال فترة وجوده بالمدرسة، طوال الوقت. ليتعرف على مستواه بشكل يومي عبر تقييم المعلمين له، وهل حضر ابنه أم غاب، وهل افتعل مشكلة أم أنه كان ملتزما، وكل ذلك عبر الهاتف المحمول، المتصل بسيستم المدرسة الداخلي.
+  وأتاحت الوزارة، من خلال هذا التحول الرقمي الشامل، لولي الأمر، أن يعرف: كم مصروفات المدرسة، وكم دفع من أقساط، وكم تبقى عليه، وموعد سدادها، وكل ذلك بغرض غلق "حنفية" التبرعات غير القانونية التي كانت بعض المدارس تفرضها على الأهالي. فلن يدفع الأب إلا المصروفات القانونية والمنصوص عليها في لوائح الوزارة، دون زيادة أو نقصان، ومن يخالف ذلك يتعرض للإقصاء من الوظيفة، حتى قبل أن يتقدم ولي الأمر بشكوى رسمية.
+  إضافة إلى ما سبق، من مسارات تعليمية محترفة، إداريا وتربويا. فإن ولي الأمر أصبح بإمكانه أن يعرف جدول الحصص الدراسية، يوميا وأسبوعيا، وطبيعة المناهج الدراسية، وأسماء معلمي الفصل المسجل فيه ابنه أو ابنته، ويصل بسهولة إلى الدروس التي تم شرحها يوميا، ويستمع إليه بالفيديو، وكل ذلك بشكل مجاني، إضافة لإجراء امتحانات دورية تفاعلية، على هيئة اختبارات لتحديد المستوى، ليتعرف ولي الأمر على ما وصل إليه الابن من مهارات وقدرات، والميزة الأهم: أن الأب بإمكانه التواصل الإلكتروني عبر السيستم التعليمي، مع المعلم ليعرف أوجه القصور لدى ابنه، في أي مادة، وكيف يمكن علاجها، وكل ذلك أيضا بشكل مجاني.
+  حتى بالنسبة للمعلمين أنفسهم. فصار بإمكان وزارة التعليم تتبع تحركاتهم على مدار اليوم، من خلال توقيع بالحضور والانصراف عبر بصمة العين، ويتم إبلاغ المجموعة إلكترونيا، وهناك ميزة أخرى غير موجودة في أي مدرسة. وهي أن الوزارة أصبح يمكنها رقابة أي فصل دراسي بأي مدرسة من مدارس 30 يونيو، في أي وقت، لأنه سيتم وضع كاميرا متصلة بالغرفة المركزية في المجموعة، يمكن لمسؤوليها فتحها إلكترونيا ليعرفوا كيف يشرح المعلم، ويتعامل مع طلابه، وكيف يتفاعل معهم، وهكذا.
+  وصارت تقدم مدارس مجموعة 30 يونيو، ميزة مضافة على مستوى خدمات الأتوبيسات. فولي الأمر بإمكانه أن يعرف رقم "الباص" وصورة المشرف والسائق، ويتابع ابنه طوال فترة ذهابه من المنزل للمدرسة، والعكس، من خلال "السيستم" الخاص بذلك، حيث تصل إليه رسالة بأن ابنه قد وصل، أو سيتحرك الآن بعد انتهاء اليوم الدراسي، وحتى لو تم تغيير مسار الأتوبيس لأي سبب، سيعرف ولي الأمر بذلك، عبر الهاتف المحمول.
+  وبينما تركت الجماعة الإرهابية، خزائن هذه المدارس ببضعة آلاف من الجنيهات، نجحت وزارة التربية والتعليم في وصول مكاسب المدارس لمئات الملايين من الجنيهات، دون أن تبالغ في المصروفات، أو تخالف التعليمات، أو تحتمي في تبعيتها للوزارة، بل ضاعفت رواتب المعلمين والإداريين وأفراد الأمن والعمال، فيما تستعد الوزارة لزيادات جديدة في  الرواتب، بمبدأ الإثابة من رحم الجهد والتعب وأمانة المسئولية.
+  تعكس كل هذه التغييرات، كيف تحولت مدارس الإخوان سابقا، من بؤر للتطرف وبث السموم وتوظيفها في أهداف غير مشروعة، لأخرى تستهدف الطالب أولا وأخيرا، وتتعامل مع ولي الأمر كشريك أسلسي في النجاح. وبعد كل ذلك، يروج الإخوان وأصحاب المصالح الذاتية، أن هناك تلاعب وفوضى في مدارس 30 يونيو، .. ما يطرح سؤالا منطقيا: إذا كان ما أنجزته الوزارة  في هذه المدارس إفسادا وتدميرا، فكيف كان الفساد والإهمال والتلاعب والبيزنس في عهد الجماعة الإرهابية؟</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="inner">
+  <ul class="icons">
+    <!-- <li onclick="comingsoon()"><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>  -->
+    <li><a href="https://www.facebook.com/profile.php?id=100057536826358" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+    <li><a href="https://www.youtube.com/@user-jt7eo8di2t" class="icon brands style2 fa-youtube"><span class="label">Youtube</span></a></li>
+    <!-- <li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+    <li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li> -->
+  </ul>
+
+</div>
+</div></center>
+<br>
+<center>
+  <h4>Contact Us : <small>0452141411</small>
+<div>
+  <small><a href="mailto:info@almostaqbal-boys.com" style="text-decoration: none; color: white;">info@almostaqbal-boys.com </a></small>
+
+</div>
+  </h4>
+</center>
+    </div>
+    </div>
+  
+  </footer>    
+
+
+    
+
+
+
+
    
 <script src="script.js"></script>
 
