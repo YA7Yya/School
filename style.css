@@ -118,7 +118,10 @@ padding: 10px 10px 0 10px;
 
 .about{
   width: fit-content;
-
+padding: 10px;
+}
+.aboutus{
+  background-color: #2d2d30;
 }
 .modal-dialog {
   color: black;
