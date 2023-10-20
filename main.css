@@ -263,7 +263,7 @@ pre code {
 }
 hr {
   border: 0;
-  border-bottom: solid 1px;
+  border-bottom: solid 3px;
   margin: 2.5rem 0;
 }
 hr.major {
@@ -310,9 +310,7 @@ code {
   background: rgba(0, 0, 0, 0.05);
   border-color: rgba(0, 0, 0, 0.2);
 }
-hr {
-  border-bottom-color: rgba(0, 0, 0, 0.2);
-}
+
 .row {
   display: flex;
   flex-wrap: wrap;
