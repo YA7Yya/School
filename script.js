@@ -74,6 +74,6 @@ function welcomeNotify() {
   }).fire({
     
     icon: "success",
-    title: "Welcome Back !",
+    title: "Welcome Back ❤",
   })
 }

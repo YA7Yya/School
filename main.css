@@ -53,14 +53,7 @@ fieldset,
 form,
 label,
 legend,
-table,
 caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
 article,
 aside,
 canvas,
@@ -108,10 +101,7 @@ q:after {
   content: "";
   content: none;
 }
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+
 body {
   -webkit-text-size-adjust: none;
 }
@@ -2173,85 +2163,8 @@ header h6 + p {
 header p {
   color: rgba(0, 0, 0, 0.75);
 }
-.table-wrapper {
-  -webkit-overflow-scrolling: touch;
-  margin: 0 0 2rem 0;
-  overflow-x: auto;
-}
-.table-wrapper > table {
-  margin-bottom: 0;
-}
-table {
-  margin: 0 0 2rem 0;
-  width: 100%;
-}
-table tbody tr {
-  border: solid 1px;
-  border-left: 0;
-  border-right: 0;
-}
-table td {
-  padding: 0.75rem 0.75rem;
-}
-table th {
-  font-size: 0.9rem;
-  font-weight: 400;
-  padding: 0 0.75rem 0.75rem 0.75rem;
-  text-align: left;
-}
-table thead {
-  border-bottom: solid 2px;
-}
-table tfoot {
-  border-top: solid 2px;
-}
-table.alt {
-  border-collapse: separate;
-}
-table.alt tbody tr td {
-  border: solid 1px;
-  border-left-width: 0;
-  border-top-width: 0;
-}
-table.alt tbody tr td:first-child {
-  border-left-width: 1px;
-}
-table.alt tbody tr:first-child td {
-  border-top-width: 1px;
-}
-table.alt thead {
-  border-bottom: 0;
-}
-table.alt tfoot {
-  border-top: 0;
-}
-table.fixed {
-  table-layout: fixed;
-}
-table tbody tr {
-  border-color: rgba(0, 0, 0, 0.2);
-}
-table tbody tr:nth-child(2n + 1) {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-table tbody tr.alt {
-  background-color: rgba(0, 0, 0, 0.05) !important;
-}
-table th {
-  
-}
-table thead {
-  border-bottom-color: rgba(0, 0, 0, 0.2);
-}
-table tfoot {
-  border-top-color: rgba(0, 0, 0, 0.2);
-}
-table.alt tbody tr td {
-  border-color: rgba(0, 0, 0, 0.2);
-}
-table.uniform tbody tr:nth-child(2n + 1) {
-  background-color: transparent;
-}
+
+
 .banner.onload-content-fade-up .content {
   -moz-transition: opacity 0.75s ease-in-out, -moz-transform 0.75s ease-in-out;
   -webkit-transition: opacity 0.75s ease-in-out,
@@ -6617,30 +6530,8 @@ body.is-preload .items.onload-fade-in > * > .inner {
 #wrapper > .invert header p {
   color: #ffffff;
 }
-#wrapper > .invert table tbody tr {
-  border-color: white;
-}
-#wrapper > .invert table tbody tr:nth-child(2n + 1) {
-  background-color: rgba(255, 255, 255, 0.125);
-}
-#wrapper > .invert table tbody tr.alt {
-  background-color: rgba(255, 255, 255, 0.125) !important;
-}
-#wrapper > .invert table th {
-  color: #ffffff;
-}
-#wrapper > .invert table thead {
-  border-bottom-color: white;
-}
-#wrapper > .invert table tfoot {
-  border-top-color: white;
-}
-#wrapper > .invert table.alt tbody tr td {
-  border-color: white;
-}
-#wrapper > .invert table.uniform tbody tr:nth-child(2n + 1) {
-  background-color: transparent;
-}
+
+
 #wrapper > .invert .banner .image {
   background-color: rgba(255, 255, 255, 0.125);
 }

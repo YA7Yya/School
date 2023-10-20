@@ -22,7 +22,8 @@ body{
   background-size: cover;
   width: 100vw;
   height: 120vh; */
-
+  display: flex;
+  width: 100%;
 overflow-x: hidden;
 }
 
@@ -114,3 +115,40 @@ padding: 10px;
   color: black;
 }
 
+#s{
+  width: 100%;
+  height: auto;
+  background-color: #EEE;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px
+}
+table, th{
+  padding-top: 20px;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  border-spacing: 10px;
+}
+
+th, td {
+  width: 10%;
+  border-radius: 8px;
+  padding: 7px;
+}
+tr{
+  border-radius: 8px;
+}
+
+th{
+  background-color: #1E90FF;
+}
+
+table .price span{
+  padding: 2px;
+  border-radius: 8px;
+}
+table .count span{
+  padding: 2px;
+  border-radius: 8px;
+}
