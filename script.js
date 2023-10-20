@@ -1,4 +1,6 @@
-let login = document.querySelector(".login")
+let login = document.querySelector(".login");
+
+
 function focusInput(){
   let input = document.querySelector(".username")
   setTimeout(() => {
@@ -8,10 +10,11 @@ function focusInput(){
 login.addEventListener("click",() =>{
   Swal.fire(
     'Read Below !',
-    'You Can Make Login Form By Yours Because I Have Not Learnt PHP ( This Message For System Management )',
+    '( This Message For System Management ) Make Login Form By Yours ',
     'error'
   )
 })
+
 let contactButton = document.querySelector(".contactButton")
 function contactFocus(){
   let input = document.querySelector(".contactFocus")
@@ -22,7 +25,7 @@ function contactFocus(){
 contactButton.addEventListener("click",() =>{
   Swal.fire(
     'Read Below !',
-    'You Can Make Login Form By Yours Because I Have Not Learnt PHP ( This Message For System Management )',
+    ' ( This Message For System Management ) You Can Make Login Form By Yours ',
     'error'
   )
 })
