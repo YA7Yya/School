@@ -112,12 +112,19 @@ padding: 10px;
 }
 
 #s{
-  width: 100%;
+  width: 60%;
   height: auto;
   background-color: #EEE;
   padding: 10px;
-  margin: 10px;
+  margin: auto;
   border-radius: 10px
+}
+.lastNews {
+border-radius: 7px;
+  width: 19%;
+  height: auto;
+  background-color: black;
+  color: white;
 }
 table, th{
   padding-top: 20px;
