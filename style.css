@@ -51,10 +51,7 @@ overflow-x: hidden;
   color: white!important;
 
 }
-#s{
-  margin: auto;
-vertical-align: middle;
-}
+
 .navbar{
   margin: 8px 8px 0 8px;
   border-radius: 8px;
@@ -62,7 +59,7 @@ vertical-align: middle;
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 88% }
+  to { width: 80% }
 }
 
 /* The typewriter cursor effect */
