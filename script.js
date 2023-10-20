@@ -64,3 +64,16 @@ contactButton.addEventListener("click",() =>{
   }
 }
 
+function welcomeNotify() {
+  Swal.mixin({
+    toast: !0,
+    position: "top-center",
+    showConfirmButton: !1,
+    timer: 3000,
+    timerProgressBar: !0,
+  }).fire({
+    
+    icon: "success",
+    title: "Welcome Back !",
+  })
+}
